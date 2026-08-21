@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F5F9; /* Cinza asfalto claro para o fundo */
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 12vh;
+    background-color: transparent; /* Grafite escuro / chumbo metálico */
+    border-bottom: 2px solid #27272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    z-index: 10;    
+}
+header div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #18181B;
+    height: 6vh;
+    min-width: 320px; /* Largura mínima para acomodar os 4 botões */
+    padding: 0 10px;
+    border-radius: 8px;
+    gap: 10PX;
+    
+
+}
+header p {
+    position: absolute;
+    left: 90px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #A1A1AA; /* Cinza prateado fosco */
+
+    display: inline-block;
+
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #FFFFFF; /* Branco prateado no hover */
+    transform: scale(1.25);
+}
+
+.table-cars {
+    width: 100%;
+    padding-top: 15vh;
+    padding-bottom: 50px;
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 10px;
+    justify-content: space-around;
+}
+
+.painel {
+    width: 280px;
+    height: 350px;
+    background-color: #27272A; /* Card cinza titânio escuro */
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.painel img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.painel h2 {
+    margin: 30px;
+    color: #E4E4E7; /* Nome do carro em tom alumínio */
+}
+
+.painel h3 {
+    margin: 0 20px;
+    color: #FFFFFF; /* Preço FIPE em destaque total */
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #18181B; /* Grafite escuro no rodapé */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A1A1AA;
+}
