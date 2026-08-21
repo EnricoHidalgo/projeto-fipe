@@ -53,6 +53,12 @@ a{
     width: 100%;
     height: 100vh;
     background-color: antiquewhite;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.painel:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 .painel img{
     width: 25%;
