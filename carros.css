@@ -36,13 +36,14 @@ header div{
     align-items: center;
     background-color: #18181B;
     height: 6vh;
-    min-width: 320px; /* Largura mínima para acomodar os 4 botões */
-    padding: 0 10px;
+     /* Largura mínima para acomodar os 4 botões */
+    padding: 0 40px;
     border-radius: 8px;
     gap: 10PX;
     
 
 }
+
 header p {
     position: absolute;
     left: 90px;
@@ -58,15 +59,21 @@ ul {
 
 ul li a {
     text-decoration: none;
-    color: #A1A1AA; /* Cinza prateado fosco */
-
+    color: #ffffff; /* Cinza prateado fosco */
+    background-color: #118fca;
+    text-align: center;
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.404);
+    
     display: inline-block;
-
+    
+    padding: 10px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 ul li a:hover {
-    color: #FFFFFF; /* Branco prateado no hover */
+    color: #ffffff; /* Branco prateado no hover */
     transform: scale(1.25);
 }
 
