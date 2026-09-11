@@ -37,7 +37,7 @@ a{
     color: antiquewhite;
 }
 .Home{
-    background-image: url("../banner_1.png");
+    background-image: url("assets/banner_1.png");
     background-size: cover;
     width: 100%;
     height: 100vh;
