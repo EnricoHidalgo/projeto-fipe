@@ -15,7 +15,7 @@
                 <nav>
                     <ul>
                         <li><a href="index_oficial.html">Home</a></li>
-                        <li><a href="/pages/carros.html">Carros</a></li>
+                        <li><a href="carros.html">Carros</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li><a href="contatos.html">Contatos</a></li>
                     </ul>
@@ -28,18 +28,52 @@
                 <h2>encontre seu carro ideal</h2>
                 <a href="#painel" class="btnDescer">Veja oque temos disponível</a>
             </section>
-            <section class="painel" id="painel">
-                <!--Left side, only image-->
-                <div class="carros">
-                <img src="https://mediapool.bmwgroup.com/cache/P9/202210/P90483284/P90483284-novo-bmw-srie-3-10-2022-2004px.jpg" alt="BMW Série 3">
-                <!--right side, about the cars image-->    
-                <!-- <div class="descricao">
-                    <h2>BMW Série 3</h2>
-                    <p>O BMW Série 3 é um sedã esportivo de luxo que combina desempenho, tecnologia e conforto. Com motores potentes e design elegante, oferece uma experiência de condução emocionante.</p>  
-                </div>
-         -->
-            </div>
+            <section id="painel" style="display: flex; width: 100%; height: 200vh; justify-content: center; align-items: center; background-color: aliceblue; background-size: cover; flex-direction: column; font-family: Arial, sans-serif;">
+                
+                    <div style="width: 80vw; height: 80vh; background-color: black; display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-radius: 10px; overflow: hidden;">
+                        
+                        <!-- Lado Esquerdo: Textos, Preço e Botão -->
+                        <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 40vw; padding: 0 40px; gap: 20px; box-sizing: border-box;">
+                            
+                            <h2 style="color: white; font-size: 36px; margin: 0;">BMW Série 3</h2>
+                            
+                            <p style="color: white; font-size: 18px; line-height: 1.5; margin: 0;">O BMW Série 3 é um sedã esportivo de luxo que combina desempenho, tecnologia e conforto. Com motores potentes e design elegante, oferece uma experiência de condução emocionante.</p>
+                            
+                            <h3 style="color: #4da6ff; font-size: 28px; margin: 0;">R$ 320.000,00</h3>
+                            
+                            <a href="carros.html" style="background-color: #4da6ff; color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 15px 30px; border-radius: 5px; display: inline-block;">Comprar / Ver Mais</a>
+                            
+                        </div>
 
+                        <!-- Lado Direito: Imagem -->
+                        <img src="https://mediapool.bmwgroup.com/cache/P9/202210/P90483284/P90483284-novo-bmw-srie-3-10-2022-2004px.jpg" alt="BMW Série 3" style="width: 40vw; height: 100%; object-fit: cover;">
+                        
+                    </div>
+
+                    <section id="painel-porsche" style="display: flex; width: 100%; height: 100vh; justify-content: center; align-items: center; background-color: aliceblue; background-size: cover; flex-direction: column; font-family: Arial, sans-serif;">
+    
+                        <div style="width: 80vw; height: 80vh; background-color: black; display: flex; flex-direction: row; justify-content: space-between; align-items: center; border-radius: 10px; overflow: hidden;">
+                            
+                            <!-- Lado Esquerdo: Imagem (Agora com link à prova de falhas) -->
+                            <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Porsche 911 Carrera" style="width: 40vw; height: 100%; object-fit: cover;">
+                            
+                            <!-- Lado Direito: Textos, Preço e Botão -->
+                            <div style="display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 40vw; padding: 0 40px; gap: 20px; box-sizing: border-box;">
+                                
+                                <h2 style="color: white; font-size: 36px; margin: 0;">Porsche 911 Carrera</h2>
+                                
+                                <p style="color: white; font-size: 18px; line-height: 1.5; margin: 0;">O Porsche 911 Carrera é a essência do carro esportivo puro. Com seu motor boxer inconfundível, design atemporal e uma engenharia impecável, ele entrega uma experiência de direção única, luxuosa e muito emocionante.</p>
+                                
+                                <h3 style="color: #4da6ff; font-size: 28px; margin: 0;">R$ 835.000,00</h3>
+                                
+                                <a href="carros.html" style="background-color: #4da6ff; color: white; text-decoration: none; font-size: 18px; font-weight: bold; padding: 15px 30px; border-radius: 5px; display: inline-block;">Comprar / Ver Mais</a>
+                                
+                            </div>
+
+                        </div>
+                        
+                    </section>
+                
             </section>
         </main>
         <footer>
