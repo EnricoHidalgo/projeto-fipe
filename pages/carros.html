@@ -5,126 +5,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neira Concessionaria</title>
-    <link rel="stylesheet" href="../carros.css">
 </head>
 
-<body>
+<body style="margin: 0; padding: 0; list-style: none; font-family: Arial, Helvetica, sans-serif; box-sizing: border-box; background-color: #F1F5F9;">
 
     <div class="container">
 
-        <header style="width: 100%; height: 80px; position: fixed; top: 0; left: 0; z-index: 1000; background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; justify-content: space-between; align-items: center; padding: 0 50px; box-sizing: border-box;">
-            <div style="display: flex; align-items: center; gap: 10px;">
-                <span style="color: #38bdf8; font-size: 24px; font-weight: 900; letter-spacing: 2px; font-family: 'Segoe UI', sans-serif;">NEIRA</span>
+        <header
+             style="width: 100%; height: 12vh; background-color: rgba(255, 255, 255, 0.75); border-bottom: 2px solid #27272A; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(1px); z-index: 10;">
+
+            <p style="position: absolute; left: 90px; color: #000000; font-weight: bold; font-size: 18px; margin: 0;">
+                NEIRA
+            </p>
+
+            <div
+                style="display: flex; justify-content: space-evenly; align-items: center; background-color: #18181B; height: 6vh; padding: 0 40px; border-radius: 8px; gap: 10px;">
+
+                <nav>
+
+                    <ul style="display: flex; gap: 25px; margin: 0; padding: 0; list-style: none;">
+
+                        <li>
+                            <a href="index_oficial.html"
+                                style="text-decoration: none; color: white; display: inline-block;">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="carros.html"
+                                style="text-decoration: none; color: white; display: inline-block;">
+                                Carros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="sobre.html"
+                                style="text-decoration: none; color: white; display: inline-block;">
+                                Sobre
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contatos.html"
+                                style="text-decoration: none; color: white; display: inline-block;">
+                                Contatos
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
             </div>
-            <nav style="background: rgba(255, 255, 255, 0.05); padding: 8px 24px; border-radius: 30px; border: 1px solid rgba(255, 255, 255, 0.1);">
-                <ul style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
-                    <li><a href="index_oficial.html" style="color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 15px; letter-spacing: 0.5px; transition: color 0.3s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#e2e8f0'">Home</a></li>
-                    <li><a href="carros.html" style="color: #ffffff; text-decoration: none; font-weight: 600; font-size: 15px; letter-spacing: 0.5px; transition: color 0.3s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#ffffff'">Carros</a></li>
-                    <li><a href="sobre.html" style="color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 15px; letter-spacing: 0.5px; transition: color 0.3s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#e2e8f0'">Sobre</a></li>
-                    <li><a href="contatos.html" style="color: #e2e8f0; text-decoration: none; font-weight: 500; font-size: 15px; letter-spacing: 0.5px; transition: color 0.3s;" onmouseover="this.style.color='#38bdf8'" onmouseout="this.style.color='#e2e8f0'">Contatos</a></li>
-                </ul>
-            </nav>
         </header>
 
         <main>
 
-                <section class="table-cars">
+            <section class="table-cars" style="width: 100%; padding-top: 15vh; padding-bottom: 50px;">
 
-                <section class="table">
+                <section class="table" style="width: 100%; display: flex; flex-wrap: wrap; gap: 35px 10px; justify-content: space-around;">
 
-                    <section class="painel">
-                        <img src="../assets/corsa-classic.png">
-                        <h2>Corsa Classic</h2>
-                        <h3>Chevrolet</h3>
-                        <p>R$ 25.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="../assets/corsa-classic.png" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Corsa Classic</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Chevrolet</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 25.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="../assets/corsa.png">
-                        <h2>Corsa</h2>
-                        <h3>Chevrolet</h3>
-                        <p>R$ 23.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="../assets/corsa.png" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Corsa</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Chevrolet</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 23.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="../assets/celta.png">
-                        <h2>Celta</h2>
-                        <h3>Chevrolet</h3>
-                        <p>R$ 28.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="../assets/celta.png" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Celta</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Chevrolet</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 28.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgtA883ic-iEAEjGxDMWz8gHo4OqVuVZy2YSBO5ow9g&s=10">
-                        <h2>Onix</h2>
-                        <h3>Chevrolet</h3>
-                        <p>R$ 75.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgtA883ic-iEAEjGxDMWz8gHo4OqVuVZy2YSBO5ow9g&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Onix</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Chevrolet</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 75.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhasZR703J7Zg7J3P7rdLcAMEPTW5TmeWNl2j4skWnJA&s=10">
-                        <h2>Uno</h2>
-                        <h3>Fiat</h3>
-                        <p>R$ 35.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhasZR703J7Zg7J3P7rdLcAMEPTW5TmeWNl2j4skWnJA&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Uno</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Fiat</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 35.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzn4krwJBF4xQ03s63_tEXNAKU7oRSQiHQp0r5BybmVw&s=10">
-                        <h2>Palio</h2>
-                        <h3>Fiat</h3>
-                        <p>R$ 32.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzn4krwJBF4xQ03s63_tEXNAKU7oRSQiHQp0r5BybmVw&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Palio</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Fiat</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 32.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzlPobYMDOPwxpemdiuONngfyO6JZ7rTHqwwh0I8tfQ&s=10">
-                        <h2>Civic</h2>
-                        <h3>Honda</h3>
-                        <p>R$ 120.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzlPobYMDOPwxpemdiuONngfyO6JZ7rTHqwwh0I8tfQ&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Civic</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Honda</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 120.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfp-dcEwyQXAMpqZC__TK-LqIG3BajSQxWjr2elRI8aw&s=10">
-                        <h2>Corolla</h2>
-                        <h3>Toyota</h3>
-                        <p>R$ 155.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfp-dcEwyQXAMpqZC__TK-LqIG3BajSQxWjr2elRI8aw&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Corolla</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Toyota</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 155.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6CvI13RLvUmoURxNlKh33t_GgNCJWnf75qys7St04gQ&s=10">
-                        <h2>Corolla Cross</h2>
-                        <h3>Toyota</h3>
-                        <p>R$ 175.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6CvI13RLvUmoURxNlKh33t_GgNCJWnf75qys7St04gQ&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Corolla Cross</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Toyota</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 175.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_s1nzceH1CxqnuZ9H56icD6mHDI9e2wYsEHjeRy-9Q&s=10">
-                        <h2>320i</h2>
-                        <h3>BMW</h3>
-                        <p>R$ 320.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_s1nzceH1CxqnuZ9H56icD6mHDI9e2wYsEHjeRy-9Q&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">320i</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">BMW</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 320.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExmD_at2cAy-M2zb79ck1fTG_1PRCOq6LLLKNIrK-Lg&s=10">
-                        <h2>Jetta</h2>
-                        <h3>Volkswagen</h3>
-                        <p>R$ 155.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQExmD_at2cAy-M2zb79ck1fTG_1PRCOq6LLLKNIrK-Lg&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Jetta</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">Volkswagen</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 155.000,00</p>
                     </section>
 
-                    <section class="painel">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWNM6eOAbkhbUBnAgDqreJ4sDyTWemfp9VBzkxDZo_w&s=10">
-                        <h2>Haval H6</h2>
-                        <h3>GWM</h3>
-                        <p>R$ 220.000,00</p>
+                    <section class="painel" style="width: 280px; height: 350px; background-color: #27272A; border-radius: 5px; display: flex; align-items: center; flex-direction: column; cursor: pointer;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlWNM6eOAbkhbUBnAgDqreJ4sDyTWemfp9VBzkxDZo_w&s=10" style="width: 100%; height: 200px; object-fit: cover;">
+                        <h2 style="margin: 20px; color: #E4E4E7;">Haval H6</h2>
+                        <h3 style="margin: 0 20px; color: #FFFFFF;">GWM</h3>
+                        <p style="color: #fff; margin: 10px;">R$ 220.000,00</p>
                     </section>
 
                 </section>
 
             </section>
 
-
         </main>
 
-        <footer>
-            <p>&copy; NEIRA | 2026 - 2026</p>
+        <footer style="width: 100%; height: 80px; background-color: #18181B; display: flex; justify-content: center; align-items: center; color: #A1A1AA;">
+            <p style="margin: 0;">&copy; NEIRA | 2026 - 2026</p>
         </footer>
 
     </div>
