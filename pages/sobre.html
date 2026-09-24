@@ -4,52 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - AutoElite Concessionaria</title>
+    <title>AutoElite Concessionaria</title>
 </head>
 
 <body
-    style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #F1F5F9; color: #18181B;">
+    style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #F1F5F9; color: #18181B; box-sizing: border-box;">
 
-    <container>
+    <div style="width: 100%; overflow-x: hidden;">
 
         <header
-            style="width: 100%; height: 12vh; background-color: rgba(255, 255, 255, 0.75); border-bottom: 2px solid #27272A; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(1px); z-index: 10;">
+            style="width: 100%; height: 80px; background-color: rgba(255,255,255,0.92); border-bottom: 2px solid #27272A; display: flex; justify-content: center; align-items: center; position: fixed; top: 0; left: 0; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); z-index: 10; box-sizing: border-box;">
 
-            <p style="position: absolute; left: 90px; color: #000000; font-weight: bold; font-size: 18px;">
+            <p
+                style="position: absolute; left: clamp(20px, 6vw, 90px); color: #000000; font-weight: bold; font-size: clamp(16px, 2vw, 18px); margin: 0;">
                 AutoElite
             </p>
 
             <div
-                style="display: flex; justify-content: space-evenly; align-items: center; background-color: #18181B; height: 6vh; padding: 0 40px; border-radius: 8px; gap: 10px;">
+                style="display: flex; justify-content: center; align-items: center; background-color: #18181B; min-height: 48px; padding: 0 clamp(15px, 4vw, 40px); border-radius: 8px;">
 
                 <nav>
 
-                    <ul style="display: flex; gap: 25px; margin: 0; padding: 0; list-style: none;">
+                    <ul
+                        style="display: flex; flex-wrap: wrap; justify-content: center; gap: clamp(12px, 2.5vw, 25px); margin: 0; padding: 0; list-style: none;">
 
                         <li>
                             <a href="index.html"
-                                style="text-decoration: none; color: white; display: inline-block;">
+                                style="text-decoration: none; color: white; display: inline-block; font-size: clamp(13px, 2vw, 16px);">
                                 Home
                             </a>
                         </li>
 
                         <li>
                             <a href="carros.html"
-                                style="text-decoration: none; color: white; display: inline-block;">
+                                style="text-decoration: none; color: white; display: inline-block; font-size: clamp(13px, 2vw, 16px);">
                                 Carros
                             </a>
                         </li>
 
                         <li>
                             <a href="sobre.html"
-                                style="text-decoration: none; color: white; display: inline-block;">
+                                style="text-decoration: none; color: white; display: inline-block; font-size: clamp(13px, 2vw, 16px);">
                                 Sobre
                             </a>
                         </li>
 
                         <li>
                             <a href="contatos.html"
-                                style="text-decoration: none; color:white; display: inline-block;">
+                                style="text-decoration: none; color: white; display: inline-block; font-size: clamp(13px, 2vw, 16px);">
                                 Contatos
                             </a>
                         </li>
@@ -62,32 +64,30 @@
 
         </header>
 
-
-        <main style="padding-top: 12vh;">
-
-            <!-- INTRODUÇÃO -->
+        <main style="padding-top: 80px;">
 
             <section
-                style="width: 100%; min-height: 70vh; background-color: #27272A; display: flex; justify-content: center; align-items: center; position: relative; overflow: hidden;">
+                style="width: 100%; min-height: 620px; background-color: #27272A; display: flex; justify-content: center; align-items: center; box-sizing: border-box; padding: 70px 20px;">
 
                 <div
-                    style="width: 80%; max-width: 1100px; display: flex; align-items: center; justify-content: space-between; gap: 50px;">
+                    style="width: min(1100px, 90%); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 45px; box-sizing: border-box;">
 
-                    <div style="width: 50%;">
+                    <div
+                        style="flex: 1 1 450px; min-width: 0; box-sizing: border-box;">
 
                         <p
-                            style="color: #A1A1AA; font-size: 14px; font-weight: bold; letter-spacing: 2px; margin-bottom: 15px;">
+                            style="color: #A1A1AA; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin: 0 0 15px 0;">
                             SOBRE A AUTOELITE
                         </p>
 
                         <h1
-                            style="font-size: 3.5rem; color: #FFFFFF; margin: 0 0 20px 0; line-height: 1.1;">
+                            style="font-size: clamp(2.3rem, 5vw, 3.5rem); color: #FFFFFF; margin: 0 0 20px 0; line-height: 1.1;">
                             Mais que carros,<br>
                             uma nova experiência.
                         </h1>
 
                         <p
-                            style="color: #D4D4D8; font-size: 1.1rem; line-height: 1.7; margin: 0;">
+                            style="color: #D4D4D8; font-size: clamp(1rem, 2vw, 1.1rem); line-height: 1.7; margin: 0; max-width: 600px;">
                             A AutoElite nasceu com o propósito de tornar a busca pelo
                             próximo carro mais simples e acessível.
                             Aqui, cada veículo representa uma possibilidade,
@@ -97,10 +97,12 @@
                     </div>
 
                     <div
-                        style="width: 45%; height: 350px; background-color: #18181B; border-radius: 8px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.4);">
+                        style="flex: 1 1 400px; width: 100%; height: clamp(250px, 35vw, 350px); background-color: #18181B; border-radius: 8px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.4); box-sizing: border-box;">
 
-                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
-                            style="width: 100%; height: 100%; object-fit: cover;">
+                        <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+                            alt="Carro esportivo"
+                            style="width: 100%; height: 100%; object-fit: cover; display: block;">
 
                     </div>
 
@@ -108,32 +110,30 @@
 
             </section>
 
-
-            <!-- HISTÓRIA -->
-
             <section
-                style="width: 100%; background-color: #F1F5F9; padding: 90px 0;">
+                style="width: 100%; background-color: #F1F5F9; padding: 80px 20px; box-sizing: border-box;">
 
                 <div
-                    style="width: 80%; max-width: 1100px; margin: auto;">
+                    style="width: min(1100px, 90%); margin: auto; box-sizing: border-box;">
 
                     <div
-                        style="display: flex; justify-content: space-between; align-items: center; gap: 70px;">
+                        style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 50px;">
 
-                        <div style="width: 50%;">
+                        <div
+                            style="flex: 1 1 480px; min-width: 0; box-sizing: border-box;">
 
                             <p
-                                style="color: #71717A; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin-bottom: 12px;">
+                                style="color: #71717A; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin: 0 0 12px 0;">
                                 NOSSA HISTÓRIA
                             </p>
 
                             <h2
-                                style="font-size: 2.3rem; color: #18181B; margin: 0 0 25px 0;">
+                                style="font-size: clamp(2rem, 4vw, 2.3rem); color: #18181B; margin: 0 0 25px 0; line-height: 1.2;">
                                 Tudo começou com uma ideia simples.
                             </h2>
 
                             <p
-                                style="color: #52525B; font-size: 1rem; line-height: 1.8; margin-bottom: 18px;">
+                                style="color: #52525B; font-size: 1rem; line-height: 1.8; margin: 0 0 18px 0;">
                                 A AutoElite surgiu a partir da vontade de criar uma forma
                                 mais simples de encontrar um veículo. A ideia era
                                 reunir diferentes opções em um único espaço e tornar
@@ -141,7 +141,7 @@
                             </p>
 
                             <p
-                                style="color: #52525B; font-size: 1rem; line-height: 1.8; margin-bottom: 18px;">
+                                style="color: #52525B; font-size: 1rem; line-height: 1.8; margin: 0 0 18px 0;">
                                 Com o passar do tempo, essa ideia foi ganhando forma.
                                 O projeto começou a reunir diferentes marcas e modelos,
                                 sempre buscando apresentar os veículos de maneira clara
@@ -149,7 +149,7 @@
                             </p>
 
                             <p
-                                style="color: #52525B; font-size: 1rem; line-height: 1.8;">
+                                style="color: #52525B; font-size: 1rem; line-height: 1.8; margin: 0;">
                                 Hoje, a AutoElite representa essa mesma ideia: aproximar
                                 pessoas de seus próximos carros através de uma
                                 experiência simples, organizada e fácil de navegar.
@@ -157,22 +157,21 @@
 
                         </div>
 
-
                         <div
-                            style="width: 45%; background-color: #27272A; border-radius: 8px; padding: 35px; box-sizing: border-box; box-shadow: 0 12px 25px rgba(0,0,0,0.2);">
+                            style="flex: 1 1 350px; background-color: #27272A; border-radius: 8px; padding: 35px; box-sizing: border-box; box-shadow: 0 12px 25px rgba(0,0,0,0.2);">
 
                             <p
-                                style="color: #A1A1AA; font-size: 13px; letter-spacing: 2px; font-weight: bold;">
+                                style="color: #A1A1AA; font-size: 13px; letter-spacing: 2px; font-weight: bold; margin: 0;">
                                 DE UM SONHO
                             </p>
 
                             <h3
-                                style="color: #FFFFFF; font-size: 2rem; margin: 15px 0 20px 0;">
+                                style="color: #FFFFFF; font-size: clamp(1.7rem, 4vw, 2rem); margin: 15px 0 20px 0;">
                                 Para uma nova jornada.
                             </h3>
 
                             <p
-                                style="color: #D4D4D8; font-size: 1rem; line-height: 1.7;">
+                                style="color: #D4D4D8; font-size: 1rem; line-height: 1.7; margin: 0;">
                                 Acreditamos que escolher um carro não precisa ser
                                 complicado. Por isso, buscamos deixar cada etapa
                                 mais objetiva, desde a descoberta de um modelo
@@ -183,11 +182,8 @@
 
                     </div>
 
-
-                    <!-- TABELA INTEGRADA À HISTÓRIA -->
-
                     <div
-                        style="margin-top: 70px; background-color: #FFFFFF; border-radius: 8px; padding: 35px; box-sizing: border-box; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
+                        style="margin-top: 60px; background-color: #FFFFFF; border-radius: 8px; padding: clamp(20px, 4vw, 35px); box-sizing: border-box; box-shadow: 0 8px 20px rgba(0,0,0,0.08);">
 
                         <div style="margin-bottom: 25px;">
 
@@ -197,7 +193,7 @@
                             </p>
 
                             <h3
-                                style="font-size: 1.8rem; color: #18181B; margin: 0 0 10px 0;">
+                                style="font-size: clamp(1.5rem, 4vw, 1.8rem); color: #18181B; margin: 0 0 10px 0;">
                                 Algumas das opções disponíveis
                             </h3>
 
@@ -209,16 +205,15 @@
 
                         </div>
 
-
-                        <div style="width: 100%; overflow-x: auto;">
+                        <div
+                            style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 6px;">
 
                             <table
-                                style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                                style="width: 100%; min-width: 500px; border-collapse: collapse; font-size: 15px;">
 
                                 <thead>
 
-                                    <tr
-                                        style="background-color: #27272A; color: #FFFFFF;">
+                                    <tr style="background-color: #27272A; color: #FFFFFF;">
 
                                         <th
                                             style="padding: 15px; text-align: left; border-right: 1px solid #3F3F46;">
@@ -230,15 +225,13 @@
                                             Marca
                                         </th>
 
-                                        <th
-                                            style="padding: 15px; text-align: left;">
+                                        <th style="padding: 15px; text-align: left;">
                                             Valor
                                         </th>
 
                                     </tr>
 
                                 </thead>
-
 
                                 <tbody>
 
@@ -261,7 +254,6 @@
 
                                     </tr>
 
-
                                     <tr style="background-color: #FFFFFF;">
 
                                         <td
@@ -280,7 +272,6 @@
                                         </td>
 
                                     </tr>
-
 
                                     <tr style="background-color: #F8FAFC;">
 
@@ -301,7 +292,6 @@
 
                                     </tr>
 
-
                                     <tr style="background-color: #FFFFFF;">
 
                                         <td
@@ -320,7 +310,6 @@
                                         </td>
 
                                     </tr>
-
 
                                     <tr style="background-color: #F8FAFC;">
 
@@ -341,16 +330,13 @@
 
                                     </tr>
 
-
                                     <tr style="background-color: #FFFFFF;">
 
-                                        <td
-                                            style="padding: 14px 15px;">
+                                        <td style="padding: 14px 15px;">
                                             Corolla
                                         </td>
 
-                                        <td
-                                            style="padding: 14px 15px;">
+                                        <td style="padding: 14px 15px;">
                                             Toyota
                                         </td>
 
@@ -367,8 +353,8 @@
 
                         </div>
 
-
-                        <div style="text-align: right; margin-top: 20px;">
+                        <div
+                            style="text-align: right; margin-top: 20px;">
 
                             <a href="carros.html"
                                 style="text-decoration: none; color: #18181B; font-weight: bold; font-size: 14px;">
@@ -383,31 +369,30 @@
 
             </section>
 
-
-            <!-- VALORES -->
-
             <section
-                style="width: 100%; background-color: #18181B; padding: 80px 0;">
+                style="width: 100%; background-color: #18181B; padding: 80px 20px; box-sizing: border-box;">
 
-                <div style="width: 80%; max-width: 1100px; margin: auto;">
+                <div
+                    style="width: min(1100px, 90%); max-width: 1100px; margin: auto;">
 
                     <p
-                        style="color: #A1A1AA; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin-bottom: 12px;">
+                        style="color: #A1A1AA; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin: 0 0 12px 0;">
                         O QUE NOS DEFINE
                     </p>
 
                     <h2
-                        style="color: #FFFFFF; font-size: 2.3rem; margin: 0 0 40px 0;">
+                        style="color: #FFFFFF; font-size: clamp(2rem, 4vw, 2.3rem); margin: 0 0 40px 0;">
                         Nossos valores
                     </h2>
 
-                    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <div
+                        style="display: flex; gap: 20px; flex-wrap: wrap;">
 
                         <div
-                            style="flex: 1; min-width: 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
+                            style="flex: 1 1 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
 
                             <h3
-                                style="color: #FFFFFF; font-size: 1.3rem; margin-bottom: 15px;">
+                                style="color: #FFFFFF; font-size: 1.3rem; margin: 0 0 15px 0;">
                                 Variedade
                             </h3>
 
@@ -419,12 +404,11 @@
 
                         </div>
 
-
                         <div
-                            style="flex: 1; min-width: 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
+                            style="flex: 1 1 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
 
                             <h3
-                                style="color: #FFFFFF; font-size: 1.3rem; margin-bottom: 15px;">
+                                style="color: #FFFFFF; font-size: 1.3rem; margin: 0 0 15px 0;">
                                 Transparência
                             </h3>
 
@@ -436,12 +420,11 @@
 
                         </div>
 
-
                         <div
-                            style="flex: 1; min-width: 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
+                            style="flex: 1 1 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
 
                             <h3
-                                style="color: #FFFFFF; font-size: 1.3rem; margin-bottom: 15px;">
+                                style="color: #FFFFFF; font-size: 1.3rem; margin: 0 0 15px 0;">
                                 Qualidade
                             </h3>
 
@@ -453,12 +436,11 @@
 
                         </div>
 
-
                         <div
-                            style="flex: 1; min-width: 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
+                            style="flex: 1 1 220px; background-color: #27272A; border-radius: 6px; padding: 30px; box-sizing: border-box;">
 
                             <h3
-                                style="color: #FFFFFF; font-size: 1.3rem; margin-bottom: 15px;">
+                                style="color: #FFFFFF; font-size: 1.3rem; margin: 0 0 15px 0;">
                                 Compromisso
                             </h3>
 
@@ -476,22 +458,19 @@
 
             </section>
 
-
-            <!-- MISSÃO -->
-
             <section
-                style="width: 100%; background-color: #F1F5F9; padding: 90px 0;">
+                style="width: 100%; background-color: #F1F5F9; padding: 80px 20px; box-sizing: border-box;">
 
                 <div
-                    style="width: 80%; max-width: 1100px; margin: auto; text-align: center;">
+                    style="width: min(1100px, 90%); margin: auto; text-align: center;">
 
                     <p
-                        style="color: #71717A; font-size: 13px; font-weight: bold; letter-spacing: 2px;">
+                        style="color: #71717A; font-size: 13px; font-weight: bold; letter-spacing: 2px; margin: 0;">
                         NOSSA MISSÃO
                     </p>
 
                     <h2
-                        style="font-size: 2.5rem; color: #18181B; margin: 15px 0 20px 0;">
+                        style="font-size: clamp(2rem, 5vw, 2.5rem); color: #18181B; margin: 15px 0 20px 0;">
                         Conectar pessoas ao carro certo.
                     </h2>
 
@@ -508,36 +487,33 @@
 
             </section>
 
-
-            <!-- CTA -->
-
             <section
-                style="width: 100%; background-color: #27272A; padding: 70px 0;">
+                style="width: 100%; background-color: #27272A; padding: 65px 20px; box-sizing: border-box;">
 
                 <div
-                    style="width: 80%; max-width: 1100px; margin: auto; display: flex; justify-content: space-between; align-items: center; gap: 30px;">
+                    style="width: min(1100px, 90%); margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 30px;">
 
-                    <div>
+                    <div style="flex: 1 1 500px; min-width: 0;">
 
                         <p
-                            style="color: #A1A1AA; font-size: 13px; letter-spacing: 2px; font-weight: bold;">
+                            style="color: #A1A1AA; font-size: 13px; letter-spacing: 2px; font-weight: bold; margin: 0 0 10px 0;">
                             SUA PRÓXIMA ESCOLHA
                         </p>
 
                         <h2
-                            style="color: #FFFFFF; font-size: 2.2rem; margin: 12px 0;">
+                            style="color: #FFFFFF; font-size: clamp(1.8rem, 4vw, 2.2rem); margin: 12px 0;">
                             Seu próximo carro pode estar aqui.
                         </h2>
 
                         <p
-                            style="color: #D4D4D8; font-size: 1rem; margin: 0;">
+                            style="color: #D4D4D8; font-size: 1rem; margin: 0; line-height: 1.6;">
                             Conheça nossos veículos e encontre a opção ideal para você.
                         </p>
 
                     </div>
 
                     <a href="carros.html"
-                        style="text-decoration: none; background-color: #FFFFFF; color: #18181B; padding: 15px 25px; border-radius: 6px; font-weight: bold; display: inline-block;">
+                        style="text-decoration: none; background-color: #FFFFFF; color: #18181B; padding: 15px 25px; border-radius: 6px; font-weight: bold; display: inline-block; white-space: nowrap;">
                         Ver carros
                     </a>
 
@@ -547,9 +523,8 @@
 
         </main>
 
-
         <footer
-            style="background-color: #0a0a0a; color: white; padding: 50px 80px 25px 80px; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+            style="background-color: #0a0a0a; color: white; padding: 50px 20px 25px 20px; text-align: center; font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;">
 
             <h2
                 style="margin: 0 0 10px 0; font-size: 28px; letter-spacing: 2px;">
@@ -561,25 +536,26 @@
                 Encontre o carro ideal para você.
             </p>
 
-            <div style="margin-bottom: 30px;">
+            <div
+                style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px 25px; margin-bottom: 30px;">
 
-                <a href="#"
-                    style="color: white; text-decoration: none; margin: 0 15px;">
+                <a href="index.html"
+                    style="color: white; text-decoration: none;">
                     Home
                 </a>
 
                 <a href="carros.html"
-                    style="color: white; text-decoration: none; margin: 0 15px;">
+                    style="color: white; text-decoration: none;">
                     Carros
                 </a>
 
                 <a href="sobre.html"
-                    style="color: white; text-decoration: none; margin: 0 15px;">
+                    style="color: white; text-decoration: none;">
                     Sobre
                 </a>
 
                 <a href="contatos.html"
-                    style="color: white; text-decoration: none; margin: 0 15px;">
+                    style="color: white; text-decoration: none;">
                     Contatos
                 </a>
 
@@ -597,7 +573,7 @@
 
         </footer>
 
-    </container>
+    </div>
 
 </body>
 
